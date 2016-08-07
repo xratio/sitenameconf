@@ -1,0 +1,5 @@
+﻿name = Sitename configuration form
+description = This module allow change sitename.
+package = FFW
+core = 7.x
+version = 1.0
