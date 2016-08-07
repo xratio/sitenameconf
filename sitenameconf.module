@@ -19,8 +19,8 @@ function sitenameconf_menu() {
     'title' => 'Sitename config',
     'description' => 'My sitename configuration form',
     'page callback' => 'drupal_get_form',
-	'page arguments' => array('sitenameconf_form'),
-	'access arguments' => array('access myconf'),
+    'page arguments' => array('sitenameconf_form'),
+    'access arguments' => array('access myconf'),
     'menu_name' => 'main-menu',
     'type' => MENU_NORMAL_ITEM,
    );
@@ -53,7 +53,7 @@ function sitenameconf_form($form, &$form_state){
 
 function sitenameconf_form_validate($form, &$form_state) {
   if (strlen($form_state['values']['sitename']) < 6){
-	form_set_error('sitename', 'Sitename is short, min 6 characters.');
+    form_set_error('sitename', 'Sitename is short, min 6 characters.');
     return;
   }
 }
