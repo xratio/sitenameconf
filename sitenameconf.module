@@ -19,8 +19,8 @@ function sitenameconf_menu() {
     'title' => 'Sitename config',
     'description' => 'My sitename configuration form',
     'page callback' => 'drupal_get_form',
-	'page arguments' => array('sitenameconf_form'),
-	'access arguments' => array('access myconf'),
+    'page arguments' => array('sitenameconf_form'),
+    'access arguments' => array('access myconf'),
     'menu_name' => 'main-menu',
     'type' => MENU_NORMAL_ITEM,
    );
