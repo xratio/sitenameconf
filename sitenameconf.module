@@ -20,7 +20,6 @@ function sitenameconf_menu() {
     'description' => 'My sitename configuration form',
     'page callback' => 'drupal_get_form',
 	'page arguments' => array('sitenameconf_form'),
-    //'access callback' => 'user_is_logged_in',
 	'access arguments' => array('access myconf'),
     'menu_name' => 'main-menu',
     'type' => MENU_NORMAL_ITEM,
