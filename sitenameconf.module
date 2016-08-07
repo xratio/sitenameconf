@@ -51,6 +51,9 @@ function sitenameconf_form($form, &$form_state){
   return $form;
 }
 
+/**
+ * Implements hook_validate().
+ */
 function sitenameconf_form_validate($form, &$form_state) {
   if (strlen($form_state['values']['sitename']) < 6){
     form_set_error('sitename', 'Sitename is short, min 6 characters.');
