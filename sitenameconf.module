@@ -34,7 +34,7 @@ function sitenameconf_form($form, &$form_state){
   $form['sitename'] = array(
     '#type' => 'textfield',
     '#title' => t('Site name'),
-    '#default_value' => variable_get('site_name', "Default site name"),
+    '#default_value' => variable_get('site_name',""),
     '#size' => 60,
     '#maxlength' => 128,
     '#required' => TRUE,
